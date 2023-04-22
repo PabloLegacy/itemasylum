@@ -1,0 +1,290 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local CaneReach = Instance.new("TextButton")
+local LondonReach = Instance.new("TextButton")
+local LampReach = Instance.new("TextButton")
+local axe = Instance.new("TextButton")
+local Pipe= Instance.new("TextButton")
+local BoardNail = Instance.new("TextButton")
+local Stick = Instance.new("TextButton")
+local Spork = Instance.new("TextButton")
+local Belt = Instance.new("TextButton")
+local KillerFish = Instance.new("TextButton")
+local eyelander = Instance.new("TextButton")
+local MadMurd = Instance.new("TextButton")
+local LargeFork = Instance.new("TextButton")
+local Trowel = Instance.new("TextButton")
+local torch = Instance.new("TextButton")
+local LargeSpoon = Instance.new("TextButton")
+local DiamTester = Instance.new("TextButton")
+
+--Properties:
+ 
+ScreenGui.Parent = game.CoreGui
+ 
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.95, 0, 0.05, 0)
+Main.Size = UDim2.new(0, 490, 0, 350)
+Main.Active = true
+Main.Draggable = true 
+ 
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 490, 0,35)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Item asylum Reach gui"
+TextLabel.TextColor3 = Color3.fromRGB(255,0,0)
+TextLabel.TextSize = 23.000
+ 
+CaneReach.Name = "CaneReach"
+CaneReach.Parent = Main
+CaneReach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CaneReach.Position = UDim2.new(0, 130, 0.13, 0)
+CaneReach.Size = UDim2.new(0, 112, 0, 50)
+CaneReach.Font = Enum.Font.SourceSans
+CaneReach.Text = "CaneReach"
+CaneReach.TextColor3 = Color3.fromRGB(0, 0, 0)
+CaneReach.TextSize = 14.000
+CaneReach.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["cane"].Handle.Size = Vector3.new(50, 50, 50)
+game.Players.LocalPlayer.Backpack["cane"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+LondonReach.Name = "LondonReach"
+LondonReach.Parent = Main
+LondonReach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LondonReach.Position = UDim2.new(0, 10, 0.30, 0)
+LondonReach.Size = UDim2.new(0, 112, 0, 50)
+LondonReach.Font = Enum.Font.SourceSans
+LondonReach.Text = "LondonReach"
+LondonReach.TextColor3 = Color3.fromRGB(0, 0, 0)
+LondonReach.TextSize = 14.000
+LondonReach.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["london"].Handle.Size = Vector3.new(50, 50, 50)
+game.Players.LocalPlayer.Backpack["london"].Handle.Size = Vector3.new(50, 50, 50)
+end)
+
+BoardNail.Name = "BoardNail"
+BoardNail.Parent = Main
+BoardNail.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoardNail.Position = UDim2.new(0, 130, 0.30, 0)
+BoardNail.Size = UDim2.new(0, 112, 0, 50)
+BoardNail.Font = Enum.Font.SourceSans
+BoardNail.Text = "boardwithanail Reach"
+BoardNail.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoardNail.TextSize = 14.000
+BoardNail.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["board with nail"].Handle.Size = Vector3.new(150, 25, 100)
+game.Players.LocalPlayer.Backpack["board with nail"].Handle.Size = Vector3.new(150, 25, 100)
+end)
+
+Pipe.Name = "Pipe"
+Pipe.Parent = Main
+Pipe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pipe.Position = UDim2.new(0, 250, 0.13, 0)
+Pipe.Size = UDim2.new(0, 112, 0, 50)
+Pipe.Font = Enum.Font.SourceSans
+Pipe.Text = "PipeReach"
+Pipe.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pipe.TextSize = 14.000
+Pipe.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["pipe"].Handle.Size = Vector3.new(25, 150, 25)
+game.Players.LocalPlayer.Backpack["pipe"].Handle.Size = Vector3.new(25, 150, 25)
+end)
+
+LampReach.Name = "LampReach"
+LampReach.Parent = Main
+LampReach.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LampReach.Position = UDim2.new(0, 10, 0.13, 0)
+LampReach.Size = UDim2.new(0, 112, 0, 50)
+LampReach.Font = Enum.Font.SourceSans
+LampReach.Text = "LampReach"
+LampReach.TextColor3 = Color3.fromRGB(0, 0, 0)
+LampReach.TextSize = 14.000
+LampReach.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["lamp"].Handle.Size = Vector3.new(50, 150, 50)
+game.Players.LocalPlayer.Backpack["lamp"].Handle.Size = Vector3.new(50, 150, 50)
+end)
+
+axe.Name = "axe"
+axe.Parent = Main
+axe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+axe.Position = UDim2.new(0,250, 0.30, 0)
+axe.Size = UDim2.new(0, 112, 0, 50)
+axe.Font = Enum.Font.SourceSans
+axe.Text = "AxeReach"
+axe.TextColor3 = Color3.fromRGB(0, 0, 0)
+axe.TextSize = 14.000
+axe.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["axe"].Handle.Size = Vector3.new(10, 50, 10)
+game.Players.LocalPlayer.Backpack["axe"].Handle.Size = Vector3.new(10, 50, 10)
+end)
+
+Stick.Name = "Stick"
+Stick.Parent = Main
+Stick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stick.Position = UDim2.new(0, 370, 0.13, 0)
+Stick.Size = UDim2.new(0, 112, 0, 50)
+Stick.Font = Enum.Font.SourceSans
+Stick.Text = "StickReach"
+Stick.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stick.TextSize = 14.000
+Stick.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["stick"].Handle.Size = Vector3.new(20, 20, 250)
+game.Players.LocalPlayer.Backpack["stick"].Handle.Size = Vector3.new(20, 20, 250)
+end)
+
+Spork.Name = "Spork"
+Spork.Parent = Main
+Spork.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spork.Position = UDim2.new(0, 370, 0.30, 0)
+Spork.Size = UDim2.new(0, 112, 0, 50)
+Spork.Font = Enum.Font.SourceSans
+Spork.Text = "SporkReach"
+Spork.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spork.TextSize = 14.000
+Spork.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["spork"].Handle.Size = Vector3.new(10, 250, 10)
+game.Players.LocalPlayer.Backpack["spork"].Handle.Size = Vector3.new(10, 250, 10)
+end)
+
+Belt.Name = "Belt"
+Belt.Parent = Main
+Belt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Belt.Position = UDim2.new(0, 10, 0.47, 0)
+Belt.Size = UDim2.new(0, 112, 0, 50)
+Belt.Font = Enum.Font.SourceSans
+Belt.Text = "BeltReach"
+Belt.TextColor3 = Color3.fromRGB(0, 0, 0)
+Belt.TextSize = 14.000
+Belt.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["belt"].Handle.Size = Vector3.new(250, 10, 10)
+game.Players.LocalPlayer.Backpack["belt"].Handle.Size = Vector3.new(250, 10, 10)
+end)
+
+KillerFish.Name = "KillerFish"
+KillerFish.Parent = Main
+KillerFish.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillerFish.Position = UDim2.new(0, 130, 0.47, 0)
+KillerFish.Size = UDim2.new(0, 112, 0, 50)
+KillerFish.Font = Enum.Font.SourceSans
+KillerFish.Text = "KillerFishReach"
+KillerFish.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillerFish.TextSize = 14.000
+KillerFish.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["killer fish from san diego"].Handle.Size = Vector3.new(50, 100, 50)
+game.Players.LocalPlayer.Backpack["killer fish from san diego"].Handle.Size = Vector3.new(50, 100, 50)
+end)
+
+eyelander.Name = "eyelander"
+eyelander.Parent = Main
+eyelander.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+eyelander.Position = UDim2.new(0, 250, 0.47, 0)
+eyelander.Size = UDim2.new(0, 112, 0, 50)
+eyelander.Font = Enum.Font.SourceSans
+eyelander.Text = "eyelanderReach"
+eyelander.TextColor3 = Color3.fromRGB(0, 0, 0)
+eyelander.TextSize = 14.000
+eyelander.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["eyelander"].Handle.Size = Vector3.new(25, 150, 25)
+game.Players.LocalPlayer.Backpack["eyelander"].Handle.Size = Vector3.new(25, 150, 25)
+end)
+
+MadMurd.Name = "MadMurd"
+MadMurd.Parent = Main
+MadMurd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadMurd.Position = UDim2.new(0, 370, 0.47, 0)
+MadMurd.Size = UDim2.new(0, 112, 0, 50)
+MadMurd.Font = Enum.Font.SourceSans
+MadMurd.Text = "MadMurdererReach"
+MadMurd.TextColor3 = Color3.fromRGB(0, 0, 0)
+MadMurd.TextSize = 14.000
+MadMurd.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["mad murderer"].Handle.Size = Vector3.new(25, 150, 25)
+game.Players.LocalPlayer.Backpack["mad murderer"].Handle.Size = Vector3.new(25, 150, 25)
+end)
+
+LargeFork.Name = "LargeFork"
+LargeFork.Parent = Main
+LargeFork.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LargeFork.Position = UDim2.new(0,10, 0.64, 0)
+LargeFork.Size = UDim2.new(0, 112, 0, 50)
+LargeFork.Font = Enum.Font.SourceSans
+LargeFork.Text = "LargeForkReach"
+LargeFork.TextColor3 = Color3.fromRGB(0, 0, 0)
+LargeFork.TextSize = 14.000
+LargeFork.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["comically large fork"].Handle.Size = Vector3.new(25, 150, 25)
+game.Players.LocalPlayer.Backpack["comically large fork"].Handle.Size = Vector3.new(25, 150, 25)
+end)
+
+Trowel.Name = "Trowel"
+Trowel.Parent = Main
+Trowel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Trowel.Position = UDim2.new(0, 130, 0.64, 0)
+Trowel.Size = UDim2.new(0, 112, 0, 50)
+Trowel.Font = Enum.Font.SourceSans
+Trowel.Text = "TrowelReach"
+Trowel.TextColor3 = Color3.fromRGB(0, 0, 0)
+Trowel.TextSize = 14.000
+Trowel.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["trowel"].Handle.Size = Vector3.new(50, 100, 50)
+game.Players.LocalPlayer.Backpack["trowel"].Handle.Size = Vector3.new(50, 100, 50)
+end)
+
+torch.Name = "torch"
+torch.Parent = Main
+torch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+torch.Position = UDim2.new(0, 250, 0.64, 0)
+torch.Size = UDim2.new(0, 112, 0, 50)
+torch.Font = Enum.Font.SourceSans
+torch.Text = "torchReach (very op)"
+torch.TextColor3 = Color3.fromRGB(0, 0, 0)
+torch.TextSize = 14.000
+torch.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["torch"].Handle.Size = Vector3.new(500, 500, 500)
+game.Players.LocalPlayer.Backpack["torch"].Handle.Size = Vector3.new(500, 500, 500)
+end)
+
+LargeSpoon.Name = "LargeSpoon"
+LargeSpoon.Parent = Main
+LargeSpoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LargeSpoon.Position = UDim2.new(0,370, 0.64, 0)
+LargeSpoon.Size = UDim2.new(0, 112, 0, 50)
+LargeSpoon.Font = Enum.Font.SourceSans
+LargeSpoon.Text = "LargeSpoonReach"
+LargeSpoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+LargeSpoon.TextSize = 14.000
+LargeSpoon.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["comically large spoon"].Handle.Size = Vector3.new(25, 150, 25)
+game.Players.LocalPlayer.Backpack["comically large spoon"].Handle.Size = Vector3.new(25, 150, 25)
+end)
+
+DiamTester.Name = "DiamTester"
+DiamTester.Parent = Main
+DiamTester.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiamTester.Position = UDim2.new(0,10, 0.82, 0)
+DiamTester.Size = UDim2.new(0, 112, 0, 50)
+DiamTester.Font = Enum.Font.SourceSans
+DiamTester.Text = "DiamondTesterReach"
+DiamTester.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiamTester.TextSize = 14.000
+DiamTester.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Backpack["diamond tester"].Handle.Size = Vector3.new(200, 50, 50)
+game.Players.LocalPlayer.Backpack["diamond tester"].Handle.Size = Vector3.new(200, 50, 50)
+end)
+
+-- Scripts
+
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Pls give me credits ";
+ Text = "it took me hours to progamme bc its my first gui. credits: ||ImHungry||#7680";
+ Icon = "";
+ Duration = 15;
+ Button1 = "Pls";
+ Button2 = "PlsPls";
+ Callback = NotificationBindable;
+})
